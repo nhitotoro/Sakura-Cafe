@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <title>Sakura Cafe</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__bar">
+        <div class="nav__header">
+          <div class="logo nav__logo">
+            <div>SC</div>
+            <span>SAKURA<br/>CAFÉ</span>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#opening-hours">Opening</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="header" id="home">
+      <div class="section__container header__container">
+       
+        <h1>Welcome to<br />Sakura Café</h1>
+     <h2 id="sectitle"> Café x Restaurant </h2>
+      </div>
+    </header>
+    <section class="booking">
+      <div class="section__container booking__container">
+        <form action="/">
+          <div class="input__group">
+            <div class="datetime">
+            <label for="dateInput" class="form-label">Date <i class="ri-calendar-2-line"></i></label>
+            <input id="dateInput" class="form-select" type="date" placeholder="select date " />
+          </div>
+          <div class="input__group">
+            <label for="timeInput" class="form-label">Time</label>
+            <input id="timeInput" class="form-select" type="time" placeholder="select time" />
+          </div>
+     </div>
+            <div class="input__group">
+              <label class="form-label" onclick="togglePersonsDropdown()">
+                Guests
+              </label>
+              <div class="input__group">
+                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                <select class="form-select mscg-covers" name="covers">
+                  <option value="" disabled selected hidden>select number of guests</option>
+                <option value="1">1</option><option value="2">2</option>
+                <option value="3">3</option><option value="4">4</option>
+                <option value="5">5</option><option value="6">6</option>
+                <option value="7">7</option><option value="8">8</option>
+                <option value="9">9</option><option value="10">10</option>
+              </select>
+           </div>
+           
+         <button id="bookingButton" class="btn">book a table</button>
+          </div>  
+        </div>
+  
+        </form>
+      </div>
+    </section>
+    
+    <div class="madewithlove"> 
+<p> Made with<i class="ri-heart-3-line"></i>by Sakura</p>
+    </div>
+    <div class="hours"  id="opening-hours">
+      <div class="breakfast">
+        <p id="bold"> Breakfast</p>
+        <P id="BLD">8:00am - 11:30</P>  
+      </div>
+
+        <div class="Lunch">
+        <P id="bold"> Lunch </P>
+        <P id="BLD"> 11:30am-4:00pm </P>
+    </div>
+    <div class="Dinner">
+      <P id="bold"> Dinner </P>
+      <P id="BLD"> 6:00pm - 10:00pm </P>
+  </div>
+  <div class="closed"> </div>
+      <p> Closed on Sun & Mon </p>
+  
+    </div>
+    <section class="gallery_container">
+
+<div class="gallery"> 
+<img src="pancakes.png" class="center">
+<img src="sushi.png"class="center">
+<img src="drinks.png"class="center">
+</div>
+    </section>
+<div class="contactt"> 
+<p id="ctt"> Contact </p>
+<p id="bold"> Tel </p>
+<P id="BLD"> 0123456789 </P>
+<div class="address">
+  <p id="bold"> Address</p>
+   <p > Cherry Street 12</p>
+<p id="BLD"> 0444 Cherryland, Seoul, South Korea</p>
+<div CLASS="Email"> 
+<p id="bold"> Email</p>
+  <p id="BLD"> SakuraCafe.reservation@gmail.com </p>
+</div>
+</div>
+</div>
+<div class="copyright"> 
+<p class="font_7 wixui-rich-text__text" 
+style="font-size:14px; line-height:1.5em; text-align:center;">
+<span class="color_23 wixui-rich-text__text">
+  <span style="font-size:14px;" class="wixui-rich-text__text">
+    <span style="letter-spacing:0.05em;" class="wixui-rich-text__text">
+      <span style="font-family:futura-lt-w01-book,sans-serif;" class="wixui-rich-text__text">Copyright © 2024. Jennifer Tran All rights reserved.
+</span></span></span></span></p></div>
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
